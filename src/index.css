@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("./assets/fonts/Inconsolata-VariableFont.ttf") format("truetype");
+}
+
+@layer base {
+  :root {
+    --background: 248 70% 10%;
+    --foreground: 0 0% 100%;
+    --card: 245 19% 35%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 7 88% 67%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 245 19% 35%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 252 6% 83%;
+    --muted-foreground: 0 0% 100%;
+    --accent: 7 71% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 245 19% 35%;
+    --input: 245 19% 35%;
+    --ring: 245 15% 58%;
+    --radius: 0.5rem;
+  }
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+body {
+  font-family: "Inconsolata", monospace;
+}
+
+.writing-mode-vertical-rl {
+  writing-mode: vertical-rl;
+  transform: -rotate(180deg);
+}
