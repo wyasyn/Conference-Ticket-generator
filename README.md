@@ -12,7 +12,6 @@ This is a solution to the [Conference ticket generator challenge on Frontend Men
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -39,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://github.com/wyasyn/Conference-Ticket-generator.git)
+- Live Site URL: [Live site URL here](https://conference-ticket-generator.netlify.app/)
 
 ## My process
 
@@ -52,60 +51,46 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [Motion](https://motion.dev/) - Animation Library
+- [Tailwindcss](https://tailwindcss.com/) - For styles
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned the use of the context-api for state management, motion for animation and practiced more JS to be more fluent like use of random numbers to generate the ticket number and transitions
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+The use multiple backgrounds was a challenge but figured it out by reviewing the docs such as;
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+backgroundImage: {
+        desktop: "url('/pattern-lines.svg'), url('/background-desktop.png')",
+        mobile: "url('/pattern-lines.svg'), url('/background-mobile.png')",
+        tablet: "url('/pattern-lines.svg'), url('/background-tablet.png')",
+        ticket: "url('/pattern-ticket.svg')",
+      },
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+Also making gradient text was a challenged, but by Googling, I came up with a good solution.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```js
+<span className="bg-gradient-to-r from-primary to-foreground bg-clip-text text-transparent">
+  {ticket.fullName}
+</span>
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+I would like to learn more the use of Redux and Zustand for state management and Tan Stack Query.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [ywalum](https://www.ywalum.com)
+- Frontend Mentor - [@wyasyn](https://www.frontendmentor.io/profile/wyasyn)
+- Twitter - [@wyasyn](https://www.twitter.com/wyasyn)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I would like to give thanks to the following people that have given me confidence to write code and simplified teaching in the best way, Thank you:
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Kevin Powell
+- Dave Gray
+- Web Dev Simplified
